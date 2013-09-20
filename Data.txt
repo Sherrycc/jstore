@@ -1,0 +1,48 @@
+insert into Student values ("1990-01-01", "CS", "amy@cityu.edu", "Amy", 23456789, 51800000);
+insert into Student values ("1990-02-01", "CS", "billy@cityu.edu", "Billy", 23232323, 51800001);
+insert into Student values ("1990-03-01", "CS", "cally@cityu.edu", "Cally", 26453120, 51800002);
+insert into Student values ("1991-04-01", "CS", "daisy@cityu.edu", "Daisy", 25814625, 51800003);
+insert into Student values ("1990-04-01", "BBA", "eva@cityu.edu", "Eva", 21112130, 51800004);
+insert into Student values ("1989-04-01", "BBA", "atticus@cityu.edu", "Atticus", 26816625, 51800005);
+insert into Student values ("1985-04-01", "BBA", "cassius@cityu.edu", "Cassius", 238554625, 51800006);
+insert into Student values ("1989-11-01", "BBA", "cato@cityu.edu", "Cato", 26814625, 51800007);
+insert into Student values ("1990-02-01", "EE", "thelonius@cityu.edu", "Thelonius", 28814625, 51800008);
+insert into Student values ("1990-04-01", "EE", "marcus@cityu.edu", "Marcus", 26814625, 51800009);
+insert into Student values ("1990-04-04", "EE", "virgil@cityu.edu", "Virgil", 27514625, 51800010);
+insert into Student values ("1990-04-01", "EE", "quintus@cityu.edu", "Quintus", 25544625, 51800011);
+insert into Student values ("1990-04-01", "MA", "hadrian@cityu.edu", "Hadrian", 25814625, 51800012);
+insert into Student values ("1990-04-08", "MA", "felix@cityu.edu", "Felix", 21314625, 51800013);
+insert into Student values ("1990-08-01", "MA", "severus@cityu.edu", "Severus", 24343325, 51800014);
+
+insert into Department values ("CS", "cs@cityu.edu", "Computer Science", 26143512);
+insert into Department values ("BBA", "bba@cityu.edu", "Business", 26151303);
+insert into Department values ("EE", "ee@cityu.edu", "Electronic Engineering", 26143231);
+insert into Department values ("MA", "ma@cityu.edu", "Maths", 23131232);
+
+Insert into Course values ("CS1000", "CS", "Programming I");
+Insert into Course values ("CS1001", "CS", "Programming II");
+Insert into Course values ("CS2000", "CS", "Database I");
+Insert into Course values ("BBA1000", "BBA", "Accounting I");
+Insert into Course values ("BBA1001", "BBA", "Accounting II");
+Insert into Course values ("EE1000", "EE", "Engineering I");
+Insert into Course values ("EE2000", "EE", "Engineering II");
+Insert into Course values ("MA1000", "MA", "Maths I");
+Insert into Course values ("MA2000", "MA", "Maths II");
+
+Insert into Enrollment values ("CS1000", "", "51800000_CS1000_2012A", 51800000, "2012A");
+Insert into Enrollment values ("CS1000", "", "51800001_CS1000_2012A", 51800001, "2012A");
+Insert into Enrollment values ("CS1000", "", "51800002_CS1000_2012A", 51800002, "2012A");
+Insert into Enrollment values ("CS1000", "", "51800003_CS1000_2012A", 51800003, "2012A");
+Insert into Enrollment values ("CS1000", "", "51800008_CS1000_2012A", 51800008, "2012A");
+Insert into Enrollment values ("CS1000", "", "51800009_CS1000_2012B", 51800009, "2012B");
+Insert into Enrollment values ("CS1000", "", "51800010_CS1000_2012B", 51800010, "2012B");
+Insert into Enrollment values ("CS1001", "", "51800002_CS1001_2012A", 51800002, "2012A");
+Insert into Enrollment values ("CS1001", "", "51800011_CS1001_2012B", 51800011, "2012B");
+Insert into Enrollment values ("BBA1000", "", "51800002_BBA1000_2012A", 51800002, "2012A");
+Insert into Enrollment values ("BBA1000", "", "51800004_BBA1000_2012A", 51800004, "2012A");
+Insert into Enrollment values ("BBA1000", "", "51800006_BBA1000_2012B", 51800006, "2012B");
+Insert into Enrollment values ("EE1000", "", "51800003_EE1000_2012A", 51800003, "2012A");
+Insert into Enrollment values ("EE1000", "", "51800008_EE1000_2012B", 51800008, "2012B");
+Insert into Enrollment values ("MA1000", "", "51800014_MA1000_2012A", 51800014, "2012A");
+Insert into Enrollment values ("MA1000", "", "51800013_MA1000_2012B", 51800013, "2012B");
+Insert into Enrollment values ("MA1000", "", "51800012_MA1000_2012B", 51800012, "2012B");

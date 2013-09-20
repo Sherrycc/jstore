@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" manifest="course.appcache">
+	<head>
+		<title>Grading System</title>
+		<script src="../jstore.js"></script>
+		<script src="main.js"></script>
+		<link rel="stylesheet" type="text/css" href="grading.css" />
+	</head>
+
+	<body>
+		<div id="mainContainer">
+			<!-- Page Header -->
+			<div id="header">
+				<h1>Grading System</h1>
+			</div>
+			
+			<!-- Navigation -->
+			<div id="navigation">
+				<ul>
+					<li><a href="main.html">Student</a></li>
+					<li style="font-weight:bold">Course</li>
+					<li><a href="department.html">Department</a></li>
+					<li><a href="enrollment.html">Enrollment</a></li>
+					<li><a href="grading.html">Grading</a></li>
+					<li><a href="command.html">SQL</a></li>
+				</ul>
+			</div>
+			
+			<!-- Page Content -->
+			<div id="pageContent">
+				<input type="button" id="allCourse" value="Show all courses" onclick="showAllCourse()">
+				<input type="button" id="searchCourse" value="Search course" onclick="searchCourse()">
+				<br>
+				<div id="searchID">Course ID: <input type="text" id="cidText"><input type="button" id="cidSearch" value="Search" onclick="searchCourseGo()"></div>
+				<div id="record"></div>
+				<div id="hided_record"></div>
+				<div id="modifyRecord">
+					<input type="button" id="InsertCourse" value="Insert new course" onclick="insertCourse_addRow()">
+				</div>
+			</div>
+			
+			<!-- Footer -->
+			<div id="footer">
+				<div id="statusMsg"></div>
+				<input type="button" id="uploadCourse" value="Synchronize Course to Server" onclick="uploadCourse_handler()">
+				<input type="button" id="downloadCourse" value="Synchronize Course from Server" onclick="downloadCourse_handler()">
+				<input type="button" id="downloadAll" value="Synchronize all tables from Server" onclick="downloadAll_handler()">
+				<input type="button" id="uploadAll" value="Synchronize all tables to Server" onclick="uploadAll_handler()">
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" manifest="command.appcache">
+	<head>
+		<title>Grading System</title>
+		<script src="../jstore.js"></script>
+		<script src="main.js"></script>
+		<link rel="stylesheet" type="text/css" href="grading.css" />
+	</head>
+
+	<body>
+		<div id="mainContainer">
+			<!-- Page Header -->
+			<div id="header">
+				<h1>Grading System</h1>
+			</div>
+			
+			<!-- Navigation -->
+			<div id="navigation">
+				<ul>
+					<li><a href="main.html">Student</a></li>
+					<li><a href="course.html">Course</a></li>
+					<li><a href="department.html">Department</a></li>
+					<li><a href="enrollment.html">Enrollment</a></li>
+					<li><a href="grading.html">Grading</a></li>
+					<li style="font-weight:bold">SQL</li>
+				</ul>
+			</div>
+			
+			<!-- Page Content -->
+			<div id="pageContent">
+				<section id="formbox">
+					<form id="commandbox">
+						<p>SQL Command:
+							<br><textarea id="command" name="command" cols="100" rows="7"></textarea><br>
+							<input type="button" name="execute" id="execute" value="Execute" onclick="exe();">
+						</p><br>
+					</form>	
+					<!--
+					<form id="joinAlgorithm">
+						<br>Visualization <input type="checkbox" name="visualization" id="visualization"><br>
+						<br>Join Algorithm:  <br>
+						<input type="radio" name="joinalgorithm" id="nestloopjoin">Nested Loop Join<br>
+						<input type="radio" name="joinalgorithm" id="sortmergejoin">Sort-Merge Join<br>
+						<input type="radio" name="joinalgorithm" id="hashjoin" checked="checked">Hash Join<br>
+					</form>
+					<br>
+					-->
+				</section>
+				
+				<!--
+				<h1 id="objectrecord">Object Store Records</h1> 
+				<input type="button" name="visual_next" id="visual" value="Next" onclick="visual();"> 
+				<input type="button" name="autovisual" id="autovisual" value="Auto Play">
+				<input type="text" name="autovisualMS" id="autovisualMS">ms
+				-->
+				<div id="tabledisplay">
+					<div id="record"></div>
+					<div id="table_1"></div>
+					<div id="table_2"></div>
+				</div>
+				<!--
+				<div id="table_1_hash"></div>
+				-->
+			</div>
+			
+			<!-- Footer -->
+			<div id="footer">
+				<div id="msg"></div>
+				<div id="statusMsg"></div>
+				<input type="button" id="uploadAll_SQL" value="Synchronize all tables to Server" onclick="uploadAll_handler()">
+				<input type="button" id="downloadAll_SQL" value="Synchronize all tables from Server" onclick="downloadAll_handler()">
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,164 @@
+body {
+	background-color: #BEBEBE;
+	margin: 0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#mainContainer {
+	background-color: white; 
+	margin: 10px auto; 
+	width: 90%;
+}
+
+#header {
+	padding: 30px;
+	background-color: #363636;
+	border: 1px solid;
+	text-align: center;
+	color: white;
+	font-family: Arial;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline;
+	padding: 10px;
+}
+
+#navigation {
+	padding: 10px;
+	border: 1px solid grey;
+	font-size: 21px;
+	font-family: Arial;
+	background-color: #E8E8E8;
+}
+
+#pageContent { 
+	background-color: white;
+	padding: 30px;
+}
+
+table {
+	border: 1px solid black;
+	table-layout: fixed;
+	text-align:center;
+}
+
+th, td {
+	border: 1px solid black;
+	text-align:center;
+	padding: 5px;
+}
+
+.first_row {
+	font-weight: bold;
+	background-color: #B0C4DE;
+}
+
+#record, #table_1, #table_2 {
+	margin: 20px;
+	float: left;
+}
+
+#footer {
+	clear: both;
+	background-color: #E8E8E8;
+	padding: 15px;
+	border: 1px solid grey;
+}
+
+#searchID {
+	padding: 20px;
+	display: none;
+}
+
+input {
+    margin-right: 20px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+#record input {
+	margin: 0px;
+}
+
+#record input[type="text"] {
+	width: 100px;
+}
+
+#sidText, #cidText, #didText, #courseID_input, #term_input {
+	width: 80px;
+}
+
+#modifyRecord {
+	clear: both;
+	margin: 20px;
+	display: none;
+}
+
+#uploadStu, #downloadStu, #uploadCourse, #downloadCourse, #uploadG, #downloadG, #uploadDepart, #downloadDepart{
+	margin-top: 10px;
+	padding: 10px;
+}
+
+#downloadAll, #uploadAll{
+	margin-top: 10px;
+	padding: 10px;
+	float: right;
+}
+
+#commandbox {
+	float: left;
+}
+
+#joinAlgorithm {
+	float: left;
+	padding-left: 20px;
+}
+
+#tabledisplay {
+	clear: both;
+	width: auto;
+	position: relative;
+}
+
+#objectrecord {
+	clear: both;
+}
+
+#downloadAll_SQL, #uploadAll_SQL {
+	margin-top: 10px;
+	padding: 10px;
+}
+
+#hided_record, #hided_record2{
+	display: none;
+}
+
+#Course_record, #Stu_record{
+	display: none;
+	margin-top: 20px;
+	margin-left: 80px;
+	float: left;
+}
+
+#Stu_record {
+	margin-left: 200px;
+}
+
+#searchTerm_grade, #searchCourse_grade{
+	margin-right: 20px;
+}
+
+#Stu_record_G {
+	margin-left: 100px;
+	margin-top: 20px;
+	float: left;
+}

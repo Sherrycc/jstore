@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" manifest="grading.appcache">
+	<head>
+		<title>Grading System</title>
+		<script src="../jstore.js"></script>
+		<script src="main.js"></script>
+		<link rel="stylesheet" type="text/css" href="grading.css" />
+	</head>
+
+	<body>
+		<div id="mainContainer">
+			<!-- Page Header -->
+			<div id="header">
+				<h1>Grading System</h1>
+			</div>
+			
+			<!-- Navigation -->
+			<div id="navigation">
+				<ul>
+					<li><a href="main.html">Student</a></li>
+					<li><a href="course.html">Course</a></li>
+					<li><a href="department.html">Department</a></li>
+					<li><a href="enrollment.html">Enrollment</a></li>
+					<li style="font-weight:bold">Grading</li>
+					<li><a href="command.html">SQL</a></li>
+				</ul>
+			</div>
+			
+			<!-- Page Content -->
+			<div id="pageContent">
+				Course ID: <select id="searchCourse_grade"></select>
+				Term: <select id="searchTerm_grade"></select>
+				<input type="button" id="searchCourse" value="Search" onclick="showSelectedCourse()">
+				<br>
+				<div id="hided_record"></div>
+				<div id="record"></div>
+				<div id="Stu_record_G"></div>
+			</div>
+			
+			<!-- Footer -->
+			<div id="footer">
+				<!--<div id="msg"></div>-->
+				<div id="statusMsg"></div>
+				<input type="button" id="uploadG" value="Synchronize Grade to Server" onclick="uploadEnroll_handler()">
+				<input type="button" id="downloadG" value="Synchronize Grade from Server" onclick="downloadEnroll_handler()">
+				<input type="button" id="downloadAll" value="Synchronize all tables from Server" onclick="downloadAll_handler()">
+				<input type="button" id="uploadAll" value="Synchronize all tables to Server" onclick="uploadAll_handler()">
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" manifest="main.appcache">
+	<head>
+		<title>Grading System</title>
+		<script src="../jstore.js"></script>
+		<script src="main.js"></script>
+		<link rel="stylesheet" type="text/css" href="grading.css" />
+	</head>
+
+	<body>
+		<div id="mainContainer">
+			<!-- Page Header -->
+			<div id="header">
+				<h1>Grading System</h1>
+			</div>
+			
+			<!-- Navigation -->
+			<div id="navigation">
+				<ul>
+					<li style="font-weight:bold">Student</li>
+					<li><a href="course.html">Course</a></li>
+					<li><a href="department.html">Department</a></li>
+					<li><a href="enrollment.html">Enrollment</a></li>
+					<li><a href="grading.html">Grading</a></li>
+					<li><a href="command.html">SQL</a></li>
+				</ul>
+			</div>
+			
+			<!-- Page Content -->
+			<div id="pageContent">
+				<input type="button" id="allStudent" value="Show all students" onclick="showAllStu()">
+				<input type="button" id="searchStudent" value="Search student" onclick="searchStu()">
+				<br>
+				<div id="searchID">Student ID: <input type="text" id="sidText"><input type="button" id="sidSearch" value="Search" onclick="searchStuGo()"></div>
+				<div id="record"></div>
+				<div id="hided_record"></div>
+				<div id="modifyRecord">
+					<input type="button" id="InsertStudent" value="Insert new student" onclick="insertStu_addRow()">
+				</div>
+			</div>
+			
+			<!-- Footer -->
+			<div id="footer">
+				<!--<div id="msg"></div>-->
+				<div id="statusMsg"></div>
+				<input type="button" id="uploadStu" value="Synchronize Student to Server" onclick="uploadStu_handler()">
+				<input type="button" id="downloadStu" value="Synchronize Student from Server" onclick="downloadStu_handler()">
+				<input type="button" id="downloadAll" value="Synchronize all tables from Server" onclick="downloadAll_handler()">
+				<input type="button" id="uploadAll" value="Synchronize all tables to Server" onclick="uploadAll_handler()">
+			</div>
+		</div>
+	</body>
+</html>
